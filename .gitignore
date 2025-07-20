@@ -1,0 +1,69 @@
+# --- IGNORE ALL DATA FILES ---
+# Raw data files
+data/*.csv
+data/*.xlsx
+data/*.parquet
+
+# Processed data files
+data/processed/*
+
+# SHAP values
+data/shap_values/*
+
+
+# --- IGNORE MODEL FILES ---
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.bin
+
+
+# --- KEEP STRUCTURE OF EMPTY FOLDERS ---
+# This preserves folder structure while ignoring contents
+!data/processed/
+!data/shap_values/
+!models/
+!assets/
+!reports/
+
+
+# --- EXCLUDE SPECIFIC ASSETS (if needed) ---
+# Uncomment if you have large visualization files
+# assets/*.png
+# assets/*.jpg
+# !assets/preview_*.png  # Keep small preview images
+
+
+# --- STANDARD EXCLUSIONS ---
+# Python environments
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE files
+.idea/
+.vscode/
+*.code-workspace
+*.iml
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
